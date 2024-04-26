@@ -1,0 +1,10 @@
+const nodegroup = new Array();
+nodegroup[14]=0;
+nodegroup[15]=0;
+nodegroup[126]=0;
+nodegroup[127]=0;
+nodegroup[224]=0;
+nodegroup[225]=0;
+nodegroup[240]=0;
+nodegroup[241]=0;
+export default nodegroup;

@@ -1,0 +1,7 @@
+export const groupphase = new Array();
+for(var i=0;i<24;i++){     //一维长度为5
+groupphase[i]=new Array(); }   //在声明二维
+groupphase[0][0]=0;
+groupphase[1][0]=0;
+groupphase[2][0]=0;
+groupphase[3][0]=0;

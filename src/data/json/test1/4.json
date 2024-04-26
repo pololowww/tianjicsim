@@ -1,0 +1,103 @@
+{
+    "chip_w" : 1,
+    "chip_h" : 1,
+    "core_w" : 3,
+    "core_h" : 3,
+    "phase_list": {
+      "0": {
+        "0": [
+          {
+              "core_id": {
+                "chip_x": 0,
+                "chip_y": 0,
+                "core_x": 0,
+                "core_y": 0
+              },
+              "A2S2_mode": 0,
+              "A_time": 0,
+              "S1_time": 0,
+              "S2_time": 0,
+              "multicast_core": false,
+              "packets": [
+                 {
+                  "dst_core_id": {
+                     "chip_x": 0,
+                    "chip_y": 0,
+                    "core_x": 2,
+                    "core_y": 2
+                  },
+                  "pack_num": 2,
+                  "multicast_pack": false
+                }
+              ]
+            },
+            {
+              "core_id": {
+                "chip_x": 0,
+                "chip_y": 0,
+                "core_x": 1,
+                "core_y": 0
+              },
+              "multicast_core": false,
+              "packets": [
+                {
+                  "dst_core_id": {
+                    "chip_x": 0,
+                    "chip_y": 0,
+                    "core_x": 1,
+                    "core_y": 2
+                  },
+                  "pack_num": 2,
+                  "multicast_pack": false
+                }
+              ]
+            },
+            {
+              "core_id": {
+                "chip_x": 0,
+                "chip_y": 0,
+                "core_x": 0,
+                "core_y": 2
+              },
+              "multicast_core": false,
+              "packets": [
+                {
+                  "dst_core_id": {
+                    "chip_x": 0,
+                    "chip_y": 0,
+                    "core_x": 2,
+                    "core_y": 1
+                  },
+                  "pack_num": 2240,
+                  "multicast_pack": false
+                }
+              ]
+            },
+            {
+              "core_id": {
+                "chip_x": 0,
+                "chip_y": 0,
+                "core_x": 2,
+                "core_y": 2
+              },
+              "multicast_core": false,
+              "packets": [
+              ]
+            },
+            {
+              "core_id": {
+                "chip_x": 0,
+                "chip_y": 0,
+                "core_x": 1,
+                "core_y": 2
+              },
+              "multicast_core": false,
+              "packets": [
+              ]
+            }
+
+          ]
+        }
+
+    }
+}

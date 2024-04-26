@@ -1,0 +1,285 @@
+{
+    "chip_w" : 3,                               // chip array width
+    "chip_h" : 3,                               // chip array height
+    "core_w" : 16,                              // core array width
+    "core_h" : 10,                              // core array height
+    "phase_list": {                             // 执行的phase，从0开始
+        "0": {                                      // 第0个phase
+            "0": [                                      // 第0个phase中的第0个 group
+                {                                       
+                    "core_id": {                            // core ((0, 0), (0, 0))
+                        "chip_x": 0,
+                        "chip_y": 0,
+                        "core_x": 0,
+                        "core_y": 0
+                    },
+                    "A2S2_mode" : 0,                       // 0(default) - phase的正常运行机制； 1 - Axon 未计算完也允许S2启动
+                    "A_time"    : 0,
+                    "S1_time"   : 0,
+                    "S2_time"   : 0,
+                    "multicast_core": false,
+                    "packets": [                            // 本core要发送的包
+                        {                                       // 一个路由包
+                            "src_core_id": {                        // 发送方位置。普通包写自己的位置，多播包写上一个多播core的位置
+                                "chip_x": 0,
+                                "chip_y": 0,
+                                "core_x": 0,
+                                "core_y": 0
+                            },
+                            "dst_core_id": {                        // 数据包的目标core位置
+                                "chip_x": 0,
+                                "chip_y": 0,
+                                "core_x": 1,
+                                "core_y": 0
+                            },
+                            "pack_num": 224,                        // 同样的路由包有多少个
+                            "multicast_pack": true                  // 是否是多播包
+                        }
+                    ]
+                },
+                {
+                    "core_id": {
+                        "chip_x": 0,
+                        "chip_y": 0,
+                        "core_x": 1,
+                        "core_y": 0
+                    },
+                    "multicast_core": true,
+                    "packets": [
+                        {
+                            "src_core_id": {
+                                "chip_x": 0,
+                                "chip_y": 0,
+                                "core_x": 0,
+                                "core_y": 0
+                            },
+                            "dst_core_id": {
+                                "chip_x": 0,
+                                "chip_y": 0,
+                                "core_x": 2,
+                                "core_y": 0
+                            },
+                            "pack_num": 224,
+                            "multicast_pack": true
+                        }
+                    ]
+                },
+                {
+                    "core_id": {
+                        "chip_x": 0,
+                        "chip_y": 0,
+                        "core_x": 2,
+                        "core_y": 0
+                    },
+                    "multicast_core": true,
+                    "packets": [
+                        {
+                            "src_core_id": {
+                                "chip_x": 0,
+                                "chip_y": 0,
+                                "core_x": 1,
+                                "core_y": 0
+                            },
+                            "dst_core_id": {
+                                "chip_x": 0,
+                                "chip_y": 0,
+                                "core_x": 3,
+                                "core_y": 0
+                            },
+                            "pack_num": 224,
+                            "multicast_pack": true
+                        }
+                    ]
+                },
+                {
+                    "core_id": {
+                        "chip_x": 0,
+                        "chip_y": 0,
+                        "core_x": 3,
+                        "core_y": 0
+                    },
+                    "multicast_core": false,
+                    "packets": []
+                }
+            ]
+        },
+        "1": {
+            "0": [
+                {
+                    "core_id": {
+                        "chip_x": 0,
+                        "chip_y": 0,
+                        "core_x": 0,
+                        "core_y": 0
+                    },
+                    "multicast_core": false,
+                    "packets": [
+                        {
+                            "src_core_id": {
+                                "chip_x": 0,
+                                "chip_y": 0,
+                                "core_x": 0,
+                                "core_y": 0
+                            },
+                            "dst_core_id": {
+                                "chip_x": 0,
+                                "chip_y": 0,
+                                "core_x": 1,
+                                "core_y": 0
+                            },
+                            "pack_num": 224,
+                            "multicast_pack": false
+                        },
+                        {
+                            "src_core_id": {
+                                "chip_x": 0,
+                                "chip_y": 0,
+                                "core_x": 0,
+                                "core_y": 0
+                            },
+                            "dst_core_id": {
+                                "chip_x": 0,
+                                "chip_y": 0,
+                                "core_x": 1,
+                                "core_y": 0
+                            },
+                            "pack_num": 36,
+                            "multicast_pack": true
+                        }
+                    ]
+                },
+                {
+                    "core_id": {
+                        "chip_x": 0,
+                        "chip_y": 0,
+                        "core_x": 1,
+                        "core_y": 0
+                    },
+                    "multicast_core": true,
+                    "packets": [
+                        {
+                            "src_core_id": {
+                                "chip_x": 0,
+                                "chip_y": 0,
+                                "core_x": 1,
+                                "core_y": 0
+                            },
+                            "dst_core_id": {
+                                "chip_x": 0,
+                                "chip_y": 0,
+                                "core_x": 2,
+                                "core_y": 0
+                            },
+                            "pack_num": 8,
+                            "multicast_pack": false
+                        },
+                        {
+                            "src_core_id": {
+                                "chip_x": 0,
+                                "chip_y": 0,
+                                "core_x": 0,
+                                "core_y": 0
+                            },
+                            "dst_core_id": {
+                                "chip_x": 0,
+                                "chip_y": 0,
+                                "core_x": 2,
+                                "core_y": 0
+                            },
+                            "pack_num": 36,
+                            "multicast_pack": true
+                        },
+                        {
+                            "src_core_id": {
+                                "chip_x": 0,
+                                "chip_y": 0,
+                                "core_x": 2,
+                                "core_y": 0
+                            },
+                            "dst_core_id": {
+                                "chip_x": 0,
+                                "chip_y": 0,
+                                "core_x": 0,
+                                "core_y": 0
+                            },
+                            "pack_num": 120,
+                            "multicast_pack": true
+                        }
+                    ]
+                },
+                {
+                    "core_id": {
+                        "chip_x": 0,
+                        "chip_y": 0,
+                        "core_x": 2,
+                        "core_y": 0
+                    },
+                    "multicast_core": false,
+                    "packets": [
+                        {
+                            "src_core_id": {
+                                "chip_x": 0,
+                                "chip_y": 0,
+                                "core_x": 2,
+                                "core_y": 0
+                            },
+                            "dst_core_id": {
+                                "chip_x": 0,
+                                "chip_y": 0,
+                                "core_x": 1,
+                                "core_y": 0
+                            },
+                            "pack_num": 120,
+                            "multicast_pack": true
+                        },
+                        {
+                            "src_core_id": {
+                                "chip_x": 0,
+                                "chip_y": 0,
+                                "core_x": 2,
+                                "core_y": 0
+                            },
+                            "dst_core_id": {
+                                "chip_x": 0,
+                                "chip_y": 0,
+                                "core_x": 0,
+                                "core_y": 0
+                            },
+                            "pack_num": 49,
+                            "multicast_pack": true
+                        }
+                    ]
+                }
+            ],
+            "1": [
+                {
+                    "core_id": {
+                        "chip_x": 0,
+                        "chip_y": 0,
+                        "core_x": 3,
+                        "core_y": 0
+                    },
+                    "multicast_core": false,
+                    "packets": [
+                        {
+                            "src_core_id": {
+                                "chip_x": 0,
+                                "chip_y": 0,
+                                "core_x": 3,
+                                "core_y": 0
+                            },
+                            "dst_core_id": {
+                                "chip_x": 0,
+                                "chip_y": 0,
+                                "core_x": 3,
+                                "core_y": 0
+                            },
+                            "pack_num": 118,
+                            "multicast_pack": false
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
